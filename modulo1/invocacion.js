@@ -1,0 +1,13 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var condicionales_1 = require("./condicionales");
+var buclesFor_1 = require("./buclesFor");
+var arr1 = ["Casa", "Coche", "Ciudad", "Cesta"];
+var arr2 = ["Barco", "Baca", "Bicicleta", "Balon", "Bisiesto", "Brasil"];
+var arr3 = ["venezuela", "Veneno", "Voltaje"];
+var suma1 = arr1.reduce(function (acc, str) { return acc + (0, buclesFor_1.add)([str]); }, 0);
+var suma2 = arr2.reduce(function (acc, str) { return acc + (0, buclesFor_1.add)([str]); }, 0);
+var suma3 = arr3.reduce(function (acc, str) { return acc + (0, buclesFor_1.add)([str]); }, 0);
+console.log("la suma de mi primer array es ".concat(suma1, ". y es ").concat((0, condicionales_1.isEven)(suma1) ? 'par' : 'impar', "."));
+console.log("la suma de mi segundo array es ".concat(suma2, ". y es ").concat((0, condicionales_1.isEven)(suma2) ? 'par' : 'impar', "."));
+console.log("la suma de mi tercer array es ".concat(suma3, ". y es ").concat((0, condicionales_1.isEven)(suma3) ? 'par' : 'impar', "."));
